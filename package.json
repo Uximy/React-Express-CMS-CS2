@@ -1,0 +1,16 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "vite preview --host"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.3.4",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}

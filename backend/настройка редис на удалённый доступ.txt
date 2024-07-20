@@ -1,0 +1,31 @@
+установить redis
+sudo apt update
+sudo apt install redis-server
+
+запустить redis
+sudo systemctl start redis-server
+sudo systemctl status redis-server
+
+дальше меняем в папке /etc/redis/redis.conf
+
+bind 127.0.0.1
+
+на
+
+bind 0.0.0.0
+
+Отключаем защиту паролем или настройте аутентификацию:
+
+# requirepass foobared
+
+И замените ее на:
+
+requirepass your_secure_password (your_secure_password это ваш секретный пароль)
+
+этот код на всякий случай для Uximy
+
+const redisClient = new Redis({
+  host: 'your_vds_ip_address',  // IP-адрес вашего VDS
+  port: 6379,
+  password: 'your_secure_password'  // Пароль, который вы установили в конфигурационном файле
+});

@@ -1,0 +1,22 @@
+{
+    "hostname": "localhost",
+    "port": "3001",
+    "steamApiKey": "steamApiKey",
+    "secretKey": "secretKey",
+    "database": {
+        "ip_db": "ip_db",
+        "user": "user",
+        "password": "password",
+        "database": "databasename"
+    },
+    "databaseSkins": {
+        "ip_db": "ip_db",
+        "user": "user",
+        "password": "password",
+        "database": "databasename"
+    },
+    "YMoney": {
+        "shopID": "shopID",
+        "secretKey": "secretKey"
+    }
+}
